@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {
+      "cover": "/project/salus/salus.png",
+      "title": "Salus Brasilia",
+      "description": "React, TypeScript, Prettier, Commit lint, Netlify, Jest, Atomic Design",
+      "url": "https://7fc86e08.salusbrasilia.pages.dev"
+    }
+  ]
+}
