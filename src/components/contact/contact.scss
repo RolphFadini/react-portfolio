@@ -15,7 +15,7 @@
       display: block;
       position: relative;
       opacity: 0;
-      animation: fadeInUp 2s 2s;
+      animation: fadeInRight 2.5s cubic-bezier(0.645, 0.045, 0.355, 1);
       animation-fill-mode: forwards;
       clear: both;
     }
@@ -36,21 +36,23 @@
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #bdcddc;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: #414e78;
     padding: 0 20px;
     box-sizing: border-box;
+    border-radius: 10px;
   }
 
   textarea {
+    border-radius: 10px;
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #bdcddc;
     height: 50px;
     font-size: 16px;
-    color: #fff;
+    color: #414e78;
     padding: 20px;
     min-height: 150px;
     box-sizing: border-box;
@@ -58,12 +60,12 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: #7bb5cb;
     background: 0 0;
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 8px 6px 8px 10px;
     letter-spacing: 3px;
-    border: 1px solid #ffd700;
+    border: 1px solid #7bb5cb;
     float: right;
     border-radius: 4px;
   }
