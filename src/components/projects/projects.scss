@@ -8,7 +8,7 @@
 
   h1.page-title {
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   .images-container {
@@ -16,15 +16,22 @@
     gap: 15px;
     flex-wrap: wrap;
     padding-bottom: 100px;
+    margin-left: 100px;
   }
 
   .image-box {
     position: relative;
     flex: 1 1 20%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     max-width: calc(25% - 10px);
+    box-shadow: 3px 3px 5px #6778a3;
+    animation: pulse 1s;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
 
     .project-image {
       position: absolute;
@@ -43,7 +50,7 @@
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.5) 0,
+        rgba(0, 0, 0, 0.7) 0,
         rgba(0, 0, 0, 1)
       );
       bottom: -70px;
@@ -65,6 +72,7 @@
 
     .description {
       font-size: 14px;
+      font-weight: 500;
       margin-bottom: 5px;
       color: #fff;
     }
@@ -76,7 +84,7 @@
       padding: 0 23px;
       height: 40px;
       line-height: 34px;
-      border: 2px solid #ffd700;
+      border: 2px solid #e5bccc;
       border-radius: 4px;
       font-size: 14px;
       color: #fff;
@@ -89,12 +97,12 @@
 
     .btn:hover {
       transform: translateY(-3px);
-      background: #ffd700;
+      background: #e5bccc;
     }
 
     &:after {
       content: '';
-      background: linear-gradient(180deg, #ffd700, #000);
+      background: linear-gradient(180deg, #e5bccc, #6778a3);
       position: absolute;
       left: 0;
       right: 0;
@@ -108,7 +116,7 @@
     }
 
     &:hover:after {
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     &:hover .content {
