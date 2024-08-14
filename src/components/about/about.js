@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters/animated-letters'
 import Loader from 'react-loaders'
+import './about.scss'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const textArr = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
 
   useEffect(() => {
     const bounceAnimation = setTimeout(() => {
@@ -21,7 +21,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={textArr}
+              strArray={'About me'.split('')}
               idx={15}
             />
           </h1>
