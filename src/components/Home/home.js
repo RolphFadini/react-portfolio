@@ -7,23 +7,6 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['o', 'l', 'p', 'h']
-  const jobArray = [
-    'W',
-    'e',
-    'b',
-    ' ',
-    'D',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
 
   useEffect(() => {
     const bounceAnimation = setTimeout(() => {
@@ -38,22 +21,22 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="developer" />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
+              strArray={'Hi,'.split('')}
+              idx={1}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
+              strArray={"I'm Rolph".split('')}
+              idx={4}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'Web Developer.'.split('')}
+              idx={13}
             />
           </h1>
           <h2>Frontend Developer</h2>
