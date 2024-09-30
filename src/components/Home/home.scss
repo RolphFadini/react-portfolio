@@ -16,7 +16,7 @@
 
   h1 {
     color: #fff;
-    font-size: 72px;
+    font-size: 58px;
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -47,12 +47,41 @@
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 6px;
 
     &:hover {
       background: #e5bccc;
       color: #414e78;
       transition: all 0.5s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before,
+  .home-page h1::after {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+
+      h1 {
+        margin-left: -10px;
+      }
+    }
+
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 40px auto;
+      width: 120px;
+      text-align: center;
     }
   }
 }

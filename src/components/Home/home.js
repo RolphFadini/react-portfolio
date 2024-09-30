@@ -35,7 +35,7 @@ const Home = () => {
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Web Developer.'.split('')}
+              strArray={'Web Developer'.split('')}
               idx={13}
             />
           </h1>
