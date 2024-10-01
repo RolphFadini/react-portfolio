@@ -14,8 +14,8 @@
       overflow: hidden;
       display: block;
       position: relative;
-      opacity: 0;
-      animation: fadeInRight 2.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+      opacity: 1;
+      animation: zoomIn 2.5s cubic-bezier(0.645, 0.045, 0.355, 1);
       animation-fill-mode: forwards;
       clear: both;
     }
@@ -65,7 +65,8 @@
     text-decoration: none;
     padding: 8px 6px 8px 10px;
     letter-spacing: 3px;
-    border: 1px solid #7bb5cb;
+    border: 2px solid #7bb5cb;
+    font-weight: 700;
     float: right;
     border-radius: 4px;
   }

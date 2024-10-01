@@ -68,8 +68,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <Loader type="ball-pulse" />
       </div>
+      <Loader type="ball-pulse" />
     </>
   )
 }
