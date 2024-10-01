@@ -95,3 +95,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.about-page,
+    &.contact-page,
+    &.projects-page {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 90%;
+        display: block;
+        padding: 40px 20px 20px 20px;
+      }
+    }
+  }
+}
