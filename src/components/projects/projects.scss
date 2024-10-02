@@ -130,6 +130,22 @@
 
 @media screen and (max-width: 1200px) {
   .container.projects-page {
+    h1 {
+      margin-top: 40px;
+      margin-left: -80px;
+    }
+    .images-container {
+      margin-left: -40px;
+
+      .image-box {
+        min-width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container.projects-page {
     width: 100%;
     padding: 40px 20px 20px 20px;
     box-sizing: border-box;
@@ -143,14 +159,15 @@
       margin-left: 0;
       width: 100%;
       flex-wrap: wrap;
-    }
+      justify-content: center;
 
-    .image-box {
-      height: 300px;
-      // If theres more than 1 project, change from 100% to 50% in the calc()
-      max-width: calc(100% - 10px);
-      width: 100%;
-      flex: none;
+      .image-box {
+        height: 300px;
+        // If theres more than 1 project, change from 100% to 50% in the calc()
+        max-width: calc(100% - 10px);
+        width: 100%;
+        flex: none;
+      }
     }
   }
 }
