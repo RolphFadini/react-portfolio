@@ -16,3 +16,63 @@ p {
     animation-delay: 1.3s;
   }
 }
+.skills-container {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -45%);
+  margin-left: 100px;
+
+  .skills-logo {
+    width: 120px;
+    animation: fadeIn 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.2s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.3s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: 1.4s;
+    }
+    &:nth-of-type(5) {
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skills-container {
+    top: 55%;
+    left: 50%;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    margin-left: 0;
+    margin-top: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills-container {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-top: 400px;
+
+    .skills-logo {
+      width: 100px;
+
+      &:nth-child(5) {
+        margin-left: 150px;
+      }
+    }
+  }
+}
