@@ -1,7 +1,6 @@
 import React from 'react'
 import './sidebar.scss'
 import { NavLink } from 'react-router-dom'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
