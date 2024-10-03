@@ -1,5 +1,5 @@
 p {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   font-family: sans-serif;
   font-weight: 300;
@@ -14,6 +14,11 @@ p {
   }
   &:nth-of-type(3) {
     animation-delay: 1.3s;
+  }
+
+  .technologies {
+    color: #7bb5cb;
+    font-weight: 700;
   }
 }
 .skills-container {

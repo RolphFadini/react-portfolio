@@ -31,21 +31,32 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            facilisis facilisis libero et tristique. Phasellus maximus ultrices
-            est, quis rutrum nisi rutrum consectetur. Proin bibendum rhoncus
-            neque, eget dictum purus fermentum et.
+            I am a passionate software developer currently in my final semester
+            of an Associate's Degree in Systems Development. Over the past few
+            years, I have gained valuable experience working as a freelance
+            developer, focusing on delivering high-quality web applications. My
+            expertise spans across several technologies, including{' '}
+            <span className="technologies">
+              HTML, CSS, SQL, JavaScript, React, and Python.
+            </span>{' '}
+            I enjoy building responsive, user-centric applications and
+            continuously strive to improve my coding skills through hands-on
+            projects and learning the latest trends in web development.
           </p>
           <p>
-            Suspendisse potenti. Nam vitae odio eget nibh imperdiet ultrices.
-            Praesent mattis lacinia pulvinar. Duis iaculis ipsum diam, ut auctor
-            turpis aliquet sit amet.
+            Through my studies and freelance work, I have developed a strong
+            foundation in both front-end and back-end technologies. My current
+            projects emphasize working with modern JavaScript frameworks like{' '}
+            <span className="technologies">React.</span> I thrive in
+            environments where I can collaborate with others, solve complex
+            problems, and bring ideas to life through innovative solutions.
           </p>
           <p>
-            Proin hendrerit elit mauris, id semper urna ullamcorper in. Mauris
-            faucibus molestie erat eu pulvinar. Ut ac orci accumsan, dignissim
-            velit malesuada, rhoncus nisi. Cras in nibh varius, rhoncus lectus
-            ac, placerat neque.
+            As someone who is always eager to learn, I am excited to explore new
+            technologies and frameworks. I believe that staying curious and
+            adaptable is key in the tech industry, and I am looking forward to
+            using my skills to contribute to exciting projects that make a real
+            impact.
           </p>
         </div>
         <div className="skills-container">
