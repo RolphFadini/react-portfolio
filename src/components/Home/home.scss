@@ -9,6 +9,8 @@
 
     ul {
       opacity: 0;
+      padding: 0;
+      animation: fadeIn 1s 2s backwards;
     }
   }
 
@@ -81,7 +83,6 @@
       }
 
       ul {
-        // background-color: black;
         opacity: 1;
         list-style: none;
         margin-top: 30px;
@@ -92,7 +93,7 @@
           margin: 0 5px;
 
           &:nth-child(1) {
-            margin-left: -30px;
+            margin-left: 10px;
           }
         }
       }
@@ -108,7 +109,9 @@
       }
 
       ul {
-        margin-left: 145px;
+        margin: 40px auto;
+        width: 120px;
+        justify-content: space-around;
       }
     }
 
