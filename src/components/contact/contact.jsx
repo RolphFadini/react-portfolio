@@ -1,10 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import AnimatedLetters from '../animated-letters/animated-letters'
 import './contact.scss'
 import Loader from 'react-loaders'
+import emailjs from '@emailjs/browser'
+import config from '../../config/config.ts'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const refForm = useRef()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [subject, setSubject] = useState('')
 
   useEffect(() => {
     const bounceAnimation = setTimeout(() => {
@@ -13,6 +22,41 @@ const Contact = () => {
 
     return () => clearTimeout(bounceAnimation)
   }, [])
+
+  const sendEmail = async (e) => {
+    e.preventDefault()
+
+    const serviceId = config.emailJsServiceKey
+    const templateId = config.emailJsTemplateKey
+    const publicKey = config.emailJsPublicKey
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'Rolph Fadini',
+      from_message: message,
+      from_subject: subject,
+    }
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then(() => {
+        setName('')
+        setEmail('')
+        setMessage('')
+        setSubject('')
+        toast.success('Email sent successfully!', {
+          position: 'top-center',
+          autoClose: 2500,
+        })
+      })
+      .catch(() => {
+        toast.error('Error sending email', {
+          position: 'top-center',
+          autoClose: 2500,
+        })
+      })
+  }
 
   return (
     <>
@@ -30,32 +74,44 @@ const Contact = () => {
             message!
           </p>
           <div className="contact-form">
-            {/* Have to implement emailjs integration */}
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    value={name}
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
+                    value={email}
                     type="text"
-                    name="email"
+                    name="from_email"
                     placeholder="Email"
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </li>
                 <li>
                   <input
+                    value={subject}
                     type="text"
                     name="subject"
                     placeholder="Subject"
+                    onChange={(e) => setSubject(e.target.value)}
                     required
                   />
                 </li>
                 <li>
                   <textarea
+                    value={message}
                     name="message"
                     placeholder="Message"
+                    onChange={(e) => setMessage(e.target.value)}
                     required
                   ></textarea>
                 </li>
@@ -67,6 +123,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
       <Loader type="ball-pulse" />
     </>
   )
