@@ -74,6 +74,13 @@
       font-weight: 700;
       float: right;
       border-radius: 4px;
+
+      &:hover {
+        background: #7bb5cb;
+        color: #414e78;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
     }
   }
 }
