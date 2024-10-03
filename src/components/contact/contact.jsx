@@ -26,10 +26,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            facilisis facilisis libero et tristique. Phasellus maximus ultrices
-            est, quis rutrum nisi rutrum consectetur. Proin bibendum rhoncus
-            neque, eget dictum purus fermentum et.
+            Looking to collaborate or just curious about my work? Send me a
+            message!
           </p>
           <div className="contact-form">
             {/* Have to implement emailjs integration */}
