@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters/animated-letters'
 import Loader from 'react-loaders'
 import './about.scss'
-import cssLogo from '../../assets/images/css.svg'
-import htmlLogo from '../../assets/images/html.svg'
-import jsLogo from '../../assets/images/javascript.svg'
-import pythonLogo from '../../assets/images/python.svg'
-import reactLogo from '../../assets/images/react.svg'
+// import cssLogo from '../../assets/images/css.svg'
+// import htmlLogo from '../../assets/images/html.svg'
+// import jsLogo from '../../assets/images/javascript.svg'
+// import pythonLogo from '../../assets/images/python.svg'
+// import reactLogo from '../../assets/images/react.svg'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
