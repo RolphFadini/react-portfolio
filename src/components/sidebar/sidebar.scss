@@ -137,7 +137,7 @@
       position: fixed;
 
       &.mobile-show {
-        margin-top: 410px;
+        margin-top: 370px;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
@@ -160,6 +160,16 @@
 
       a svg.active {
         opacity: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nav-bar {
+    nav {
+      &.mobile-show {
+        margin-top: 95%;
       }
     }
   }
