@@ -59,13 +59,13 @@ const About = () => {
             impact.
           </p>
         </div>
-        <div className="skills-container">
+        {/* <div className="skills-container">
           <img src={cssLogo} alt="css logo" className="skills-logo" />
           <img src={htmlLogo} alt="html logo" className="skills-logo" />
           <img src={jsLogo} alt="javascript logo" className="skills-logo" />
           <img src={pythonLogo} alt="python logo" className="skills-logo" />
           <img src={reactLogo} alt="react logo" className="skills-logo" />
-        </div>
+        </div> */}
       </div>
 
       <Loader type="ball-pulse" />
