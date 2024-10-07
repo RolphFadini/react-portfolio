@@ -2,11 +2,6 @@ import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animated-letters/animated-letters'
 import Loader from 'react-loaders'
 import './about.scss'
-import cssLogo from '../../assets/images/css.svg'
-import htmlLogo from '../../assets/images/html.svg'
-import jsLogo from '../../assets/images/javascript.svg'
-import pythonLogo from '../../assets/images/python.svg'
-import reactLogo from '../../assets/images/react.svg'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -58,13 +53,6 @@ const About = () => {
             using my skills to contribute to exciting projects that make a real
             impact.
           </p>
-        </div>
-        <div className="skills-container">
-          <img src={cssLogo} alt="css logo" className="skills-logo" />
-          <img src={htmlLogo} alt="html logo" className="skills-logo" />
-          <img src={jsLogo} alt="javascript logo" className="skills-logo" />
-          <img src={pythonLogo} alt="python logo" className="skills-logo" />
-          <img src={reactLogo} alt="react logo" className="skills-logo" />
         </div>
       </div>
 
