@@ -116,10 +116,11 @@
 @media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: auto;
     min-height: auto;
     width: 100%;
+    bottom: 0;
     z-index: 0;
 
     ul,
@@ -132,7 +133,7 @@
       bottom: 0;
       left: 0;
       background: #181818;
-      height: auto;
+      height: fit-content;
       margin: 0;
       z-index: 2;
 
