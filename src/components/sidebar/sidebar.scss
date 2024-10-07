@@ -130,17 +130,16 @@
       bottom: 0;
       left: 0;
       background: #181818;
-
       height: auto;
       margin: 0;
       z-index: 2;
-      position: fixed;
 
       &.mobile-show {
-        margin-top: 370px;
+        margin-top: auto;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+        height: fit-content;
       }
 
       a {
@@ -160,16 +159,6 @@
 
       a svg.active {
         opacity: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .nav-bar {
-    nav {
-      &.mobile-show {
-        margin-top: 95%;
       }
     }
   }
