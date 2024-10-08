@@ -66,7 +66,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <Loader type="ball-pulse" />
+      <Loader className="loader" type="ball-pulse" />
     </>
   )
 }
