@@ -24,7 +24,7 @@ const Projects = () => {
               <img
                 className="project-image"
                 src={project.cover}
-                alt="project"
+                alt="project preview"
               />
               <div className="content">
                 <h2 className="title">{project.title}</h2>
